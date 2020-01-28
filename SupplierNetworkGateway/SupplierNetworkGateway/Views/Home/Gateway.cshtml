@@ -1,0 +1,438 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Gateway</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+   
+    <div style="background-color:blue;padding-top:1px;border:1px solid black;" class="col-lg-12">
+            <h4 style="color:white">Search Orders</h4>
+    </div>
+
+    <br />
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="PONumber">PO Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="PONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Line Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="POShipmentNumber">PO Shipment Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">XPC PO Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Material Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Material Description</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Item Category</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Stat Del Date Start</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Stat Del Date End  ..</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Delivery Date Start</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Delivery Date End</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Buyer Name <br />.</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">PGRP</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">PO Start Date Start</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">PO Start Date End</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumbesr">Status</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">PO Status</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Reason For Ordering Desc</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;"><i class="fa fa-calendar" aria-hidden="true"></i></button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Vendor Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Purchasing Org Number</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Plant  <br />.</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Account Assignment</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Line Quantity</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Open Quantity<br />.</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Quantity Received</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">BOM Reviewed</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">BOM Changed <br />.</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">MRP Recommendation</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="LineNumber">Vendor Name</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="LineNumber">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="MaterialDescription">Material Group<br />.</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="POShipmentNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">FAI Block</label>
+                    <div class="col-sm-7" style="">
+                        <input type="text" class="form-control" id="XPCPONumber">
+                    </div>
+                    <div class="col-sm-1"><button style="height: 30px;margin-left: -25px;">...</button></div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <br />.
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-4"><br />.</div>
+            <div class="col-lg-4" style="margin-left: -348px;">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label" for="XPCPONumber">Download As</label>
+                    <div class="col-sm-7" style="">
+                        <select>
+                            <option>---Select---</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 pull-right" style="margin-right: -78px;">
+            <button>Clear</button>  <button>Search</button>
+        </div>
+    </div>
+    <br/>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-4"></div>
+
+            <div class="col-lg-4">
+
+            </div>
+                <div class="col-lg-4">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="PONumber">Upload</label>
+                        <div class="col-sm-7" style="">
+                            <input type="file" class="form-control" id="PONumber">
+                        </div>
+                        <div class="col-lg-3"><button>Import</button></div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 pull-right">
+            <strong style="    margin-left: 70px;">Discard First Row(Use to ignore column headings)</strong> <input type="checkbox" />
+        </div>
+    </div>
+
+    <div style="background-color:blue;padding-top:1px;border:1px solid black;" class="col-lg-12">
+        <h4 style="color:white">Search Results</h4>
+    </div>
+
+    <div style="background-color:lightgrey;padding-top:1px;border:1px solid black;" class="row">
+        <br/>
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="form-group row">
+                    <div class="col-sm-7" style="">
+                        <select><option>No actions are available</option></select>
+                        
+                    </div>
+                    <div class="col-sm-1"><button style="height: 23px;margin-left: -77px;">Go</button></div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                
+            </div>
+
+            <div class="col-lg-6">
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="POShipmentNumber">Results Folder</label>
+                    <div class="col-sm-7" style="">
+                        <select style="width:103%;"><option>Defaults</option></select>
+                    </div>
+                    <div class="col-sm-1">
+                        <button><span class="glyphicon glyphicon-pencil"></span></button>
+                    </div>
+                    <div class="col-sm-1">
+                        <button><span class="glyphicon glyphicon-remove-sign"></span></button>
+                    </div>
+                </div>
+            </div>
+        
+      </div>
+    </div>
+</body>
+</html>
